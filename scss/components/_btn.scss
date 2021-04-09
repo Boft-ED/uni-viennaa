@@ -1,0 +1,11 @@
+    .btn-blue{
+        padding: 8px 9px;
+        color: #fff !important;
+        background-color: $blue;
+        display: inline-block;
+        transition: .3s;
+        &:hover{
+            background-color: $green;
+            color: #fff;
+        }
+    }

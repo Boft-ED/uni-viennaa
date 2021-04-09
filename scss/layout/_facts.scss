@@ -1,0 +1,42 @@
+.facts{
+    background: url("../img/facts/bg.png");
+    padding-top: 35px;
+    padding-bottom: 50px;
+    .block-title{
+        &__title{
+            color: #fff;
+        }
+    &::before,
+    &::after{
+            background-color: #fff;
+        }
+    }
+    .row{
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    &__column{
+        text-align: center;
+        width: 230px;
+    }
+    &__text{
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 65px;
+        padding-bottom: 15px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+        border-bottom: 4px solid #fff;
+    }
+    &__number{
+        font-size: 62px;
+        font-weight: 600;
+        line-height: 46px;
+        @include md{
+            font-size: 48px;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+//header
+.header-top{
+    min-height: 75px;
+    background-color: $blue;
+    overflow: hidden;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        right: -15px;
+        width: 39.5%;
+        height: 50px;
+        background-color: rgba(225, 80, 80, 0.5);
+        transform: skewX(-30deg);
+        @include lg{
+            display: none;
+        }
+    }
+    &__link-wrapper{
+    }
+    &__link{
+        font-weight: 600;
+        font-size: 13px;
+        transition: .3s;
+        &:hover{
+            color: $green;
+        }
+    }
+}
+.header-bottom{
+    height: 95px;
+    background-color: #fff;
+    &__logo-wrapper{
+        width: 245px;
+        position: relative;
+        left: 6.3%;
+        display: flex;
+        align-items: center;
+        z-index: 1000;
+    }
+    .navbar{
+        height: 100%;
+        padding: 0;
+    }
+    .navbar-nav{
+        margin-right: 30%;
+    }
+    .navbar-collapse{
+        z-index: 100;
+        background-color: #fff;
+        padding-left: 8%;
+    }
+    .nav-item{
+        color: #111111;
+        font-weight: 600;
+        font-size: 13px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+        transition: .3s;
+        margin-right: 10px;
+        &:hover{
+            .nav-item__rectangle-bottom{
+                transform: translateX(0);
+            }
+            .nav-link{
+                color: $green;
+            }
+        }
+        &__rectangle-bottom{
+            width: 28px;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 8px;
+            transform: translateX(-36px);
+            background-color: $green;
+            transition: .2s;
+        }
+    }
+    .navbar-toggler{
+    border: none;
+    margin-right: 15px;
+    &:focus,
+    &:active,
+    .navbar-toggler-icon:focus {
+    outline: none ;
+    box-shadow: none;
+    border: none;
+        }
+    }
+}

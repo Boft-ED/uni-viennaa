@@ -1,0 +1,48 @@
+.services{
+    padding-top: 72px;
+    padding-bottom: 100px;
+    color: $blue;
+    &__block{
+        width: 310px;
+        height: 155px;
+        background-color: #F6F6F6;
+        border-bottom: 4px solid $green;
+    }
+    &__row{
+        margin-top: 35px;
+        margin-bottom: 70px;
+    }
+    &__text{
+        margin-top: 34px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    &__price{
+        font-size: 62px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 42px;
+        margin-top: 20px;
+    }
+    &__btn{
+        color: #fff !important;
+        background-color: $green;
+        width: 265px;
+        height: 57px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 auto;
+        transition: .3s;
+        &:hover{
+            background-color: $blue;
+            color: #fff;
+        }
+    }
+}

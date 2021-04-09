@@ -1,0 +1,38 @@
+    .block-title{
+    width: 545px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    @include md{
+        width: 300px;
+    }
+    &__title{
+        font-size: 30px !important;
+        font-weight: 600;
+        line-height: 30px;
+        color: $blue;
+        @include md{
+            font-size: 16px !important;
+        }
+    }
+    &::before,
+    &::after{
+        content: '';
+        width: 230px;
+        height: 4px;
+        background-color: $blue;
+        position: absolute;
+        top: 80%;
+        left: 55%;
+        @include md{
+            width: 95px;
+            height: 2px;
+        }
+        }
+    &::after{
+        left: unset;
+        right: 55%;
+    }
+    }
+    

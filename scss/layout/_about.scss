@@ -1,0 +1,48 @@
+//about
+.about{
+    min-height: 375px;
+    background: url("../img/about/1.png") 0% 0% / cover;
+    margin-top: 75px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    position: relative;
+    .container{
+    position: relative;
+    }
+    &::after{
+        content: '';
+        background-color: $green;
+        width: 800px;
+        height: 60px;
+        max-width: 110%;
+        position: absolute;
+        top: -10px;
+        left: -30px;
+        transform: skewX(30deg);
+        @include lg{
+            left: -100px;
+        }
+    }
+    &__title{
+        position: absolute;
+        z-index: 1;
+        top: -90px;
+        left: 9px;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 39px;
+        text-transform: uppercase;
+        @include md{
+            font-size: 24px;
+        }
+    }
+    &__text{
+        width: 66%;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 26px;
+        @include md{
+            width: 100%;
+        }
+    }
+}

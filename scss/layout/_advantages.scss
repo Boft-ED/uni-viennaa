@@ -1,0 +1,54 @@
+.advantages{
+    background-color: $blue;
+    padding-top: 60px;
+    overflow: hidden;
+    padding-bottom: 40px;
+    .block-title{
+        height: 100px;
+        &__title{
+            color: #fff
+        }
+        &::before,
+        &::after{
+            background-color: #fff;
+        }
+    }
+    &__row{
+        margin-top: 75px;
+        @include lg{
+            margin-top: 50px;
+        }
+    }
+    
+    &__column{
+        padding: 30px;
+        border-width: 3px;
+        border-style: dashed;
+        border-image: linear-gradient(0deg, #E15050, #ffffff);
+        text-align: center;
+        background: linear-gradient(#2D3E50,#2D3E50) padding-box /* Don't extend this to border */, linear-gradient(
+        0deg
+        ,#E15050,#ffffff) border-box; 
+        height: fit-content;
+        @include lg{
+            padding: 15px;
+        }
+    }
+    .alt {
+    border: 3px dashed #2D3E50;
+    }
+    &__title{
+        font-size: 30px;
+        font-weight: 600;
+        height: 25px;
+        line-height: 30px;
+        margin-top: 16px;
+        margin-bottom: 100px;
+    }
+    &__text{
+        text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+}
